@@ -2,7 +2,9 @@
 const button = document.getElementById("btn");
 
 button.addEventListener("click", function() {
+    let thrownDice = document.createElement("div");
     let showThrow = document.getElementById("show_throw");
+    showThrow.innerHTML = "";
 
     function rollDice(numberOfDice) {
         const dice = [];
@@ -13,10 +15,8 @@ button.addEventListener("click", function() {
 
         return dice;
     }
-
-    let thrownDice = document.createElement("div");
-    thrownDice.innerText = rollDice(5);
+    
+    thrownDice.innerHTML = rollDice(5);
     showThrow.appendChild(thrownDice);
-
 });
 
