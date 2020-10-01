@@ -12,7 +12,7 @@ button.addEventListener("click", function() {
     /*
     Section to extract how many dice user has chosen to throw
     */ 
-    const quantifyOfDice = document.getElementById("choose_dice").value;
+    const quantityOfDice = document.getElementById("choose_dice").value;
 
     /*
     Below is the function that rolls the dice!
@@ -30,7 +30,7 @@ button.addEventListener("click", function() {
         return dice;
     }
     
-    thrownDice.innerHTML = rollDice(quantifyOfDice);
+    thrownDice.innerHTML = rollDice(quantityOfDice);
     showThrow.appendChild(thrownDice); 
 
 });
