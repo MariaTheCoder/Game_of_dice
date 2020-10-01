@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Dice</title>
     <script defer src="dice.js"></script>
+    <h2>Let's throw some dice!</h2>
 </head>
 <body>
+    <p id="introduction">
+        <br>
+        Welcome to my most humble dice project. 
+        <br>
+        <br>
+        Choose below how many honest dice counting the numbers of eyes from 1 to 6 should be included in your throw and then click the button "Throw". 
+        <br>
+        <br>
+        If all dice show the same, you get a message called "YATZY!".
+    </p>
+    <input type="number" id="choose_dice"></input>
     <div id="show_throw"></div>
     <br>
     <button id="btn">Throw</button>
