@@ -1,3 +1,6 @@
+// const sumOfDice = require("./sum");   
+// const isYatzy = require("./yatzy");
+
 
 const button = document.getElementById("btn");
 
@@ -18,12 +21,16 @@ button.addEventListener("click", function() {
         const dice = [];
         
         for (let count = 1; count <= numberOfDice; count++) {
-            dice.push(Math.ceil(Math.random()*6));
+            dice.push(' ' + Math.ceil(Math.random()*6));
         }
+
+        // console.log(sumOfDice(dice))
+        // console.log(isYatzy(dice));
 
         return dice;
     }
     
     thrownDice.innerHTML = rollDice(quantifyOfDice);
     showThrow.appendChild(thrownDice); 
+
 });
