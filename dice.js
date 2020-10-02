@@ -11,9 +11,16 @@ function rollDice(numberOfDice) {
 
   return dice;
 }
+function playSound() {
+  let sound = new Audio('./audio_file/diceRoll.mp3'); 
+  sound.loop = false; 
+  sound.play();
+}
+
 
 button.addEventListener("click", function () {
 
+  playSound();
     /*
     Section to extract how many dice user has chosen to throw
     */
