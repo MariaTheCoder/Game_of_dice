@@ -1,4 +1,3 @@
-module.exports = sumOfDice;
 
 function sumOfDice(array) {
     let sum = 0;
@@ -7,7 +6,7 @@ function sumOfDice(array) {
         sum += element;
     });
 
-    return console.log(sum);
+    return sum;
 }
 
 // sumOfDice([1, 1, 1])

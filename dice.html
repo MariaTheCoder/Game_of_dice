@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Dice</title>
+    <script defer src="sum.js"></script>
+    <script defer src="yatzy.js"></script>
     <script defer src="dice.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,14 +21,14 @@
         <br>
         If all dice show the same, you get a message called "YATZY!".
     </p>
-    <input type="number" id="choose_dice"></input>
+    <input type="number" id="choose_dice" min="1" max="25"></input>
     <br>
     <br>
     <button id="btn">Throw</button>
     <h4>Result of throw:</h4>
     <div id="show_throw"></div>
     <br>
-    <h4>Sum of roll</h4>
+    <h4>Sum of roll:</h4>
     <div id="show_sum"></div>
     <br>
 </body>
