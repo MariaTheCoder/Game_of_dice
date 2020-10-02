@@ -1,4 +1,7 @@
 
-const isYatzy = arr => arr.every(v => v === arr[0]);
+const isYatzy = arr => {
+    if(arr.length === 0) return;
 
-// console.log(isYatzy([1, 1, 1, 1]));
+    return arr.every(v => v === arr[0]);
+} 
+

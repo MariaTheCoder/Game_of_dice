@@ -13,6 +13,18 @@ function rollDice(numberOfDice) {
 }
 
 button.addEventListener("click", function () {
+
+    /*
+    Section to extract how many dice user has chosen to throw
+    */
+  const quantityOfDice = document.getElementById("choose_dice").value;
+
+
+    // if(quantityOfDice.value.length == 0) {
+    //     alert("message");
+    //     return;
+    // }
+
   let displayThrow = document.getElementById("show_throw");
   let thrownDice = document.createElement("div");
   displayThrow.innerHTML = "";
@@ -25,14 +37,11 @@ button.addEventListener("click", function () {
   let shownProbOfYatzy = document.createElement("div");
   displayProbOfYatzy.innerHTML = "";
 
-  /*
-    Section to extract how many dice user has chosen to throw
-    */
-  const quantityOfDice = document.getElementById("choose_dice").value;
-
+  
   /*
     Let's define the roll as we want to use it multiple times 
     */
+
   const roll = rollDice(quantityOfDice);
 
 

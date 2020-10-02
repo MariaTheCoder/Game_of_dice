@@ -2,6 +2,8 @@
 function sumOfDice(array) {
     let sum = 0;
     
+    if(array.length === 0) return "";
+
     array.forEach(element => {
         sum += element;
     });
@@ -9,4 +11,3 @@ function sumOfDice(array) {
     return sum;
 }
 
-// sumOfDice([1, 1, 1])
