@@ -21,6 +21,10 @@ button.addEventListener("click", function () {
   let shownSum = document.createElement("div");
   displaySum.innerHTML = "";
 
+  let displayProbOfYatzy = document.getElementById("show_probOfYatzy");
+  let shownProbOfYatzy = document.createElement("div");
+  displayProbOfYatzy.innerHTML = "";
+
   /*
     Section to extract how many dice user has chosen to throw
     */
@@ -42,9 +46,11 @@ button.addEventListener("click", function () {
       thrownDice.innerHTML += " YATZY!!";
       thrownDice.classList.add("yatzy");
   }
-
   displayThrow.appendChild(thrownDice);
 
   shownSum.innerHTML = sumOfDice(roll);
   displaySum.appendChild(shownSum);
+
+  shownProbOfYatzy.innerHTML = probOfYatzy(roll);
+  displayProbOfYatzy.appendChild(shownProbOfYatzy);
 });
