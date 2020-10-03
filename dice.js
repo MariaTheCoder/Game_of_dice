@@ -13,24 +13,21 @@ function rollDice(numberOfDice) {
 }
 function playSound() {
   let sound = new Audio('./audio_file/diceRoll.mp3'); 
-  sound.loop = false; 
   sound.play();
 }
 
 
 button.addEventListener("click", function () {
 
-  playSound();
     /*
     Section to extract how many dice user has chosen to throw
     */
   const quantityOfDice = document.getElementById("choose_dice").value;
 
 
-    // if(quantityOfDice.value.length == 0) {
-    //     alert("message");
-    //     return;
-    // }
+    if(quantityOfDice > 0) {
+        playSound();
+    }
 
   let displayThrow = document.getElementById("show_throw");
   let thrownDice = document.createElement("div");
