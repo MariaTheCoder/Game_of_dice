@@ -5,5 +5,9 @@ body {
 .yatzy {
     color: rebeccapurple;
     font-weight: 900;
-    line-height: 1.5cm;
+}
+#show_throw {
+    display: flex;
+    height: 2rem;
+    align-items: center;
 }
