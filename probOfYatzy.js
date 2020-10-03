@@ -1,7 +1,7 @@
 
 function probOfYatzy(array) {
     let probFirstDie = 1;
-    let probNextDie = (6/(Math.pow(6, array.length))).toFixed(9);
+    let probNextDie = (6/(Math.pow(6, array.length)));
 
     if(array.length === 0) {
         alert("Please insert a positive whole number of dice")
