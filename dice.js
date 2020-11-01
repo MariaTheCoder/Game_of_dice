@@ -2,6 +2,12 @@ const button = document.getElementById("btn");
 /*
     Below is the function that rolls the dice!
     */
+
+// /**
+//  * rollDice function to roll six-sided dice
+//  * @param {number} numberOfDice sdfasdfasdfasdfasdfasdf
+//  * @returns {array} 
+//  */
 function rollDice(numberOfDice) {
   const dice = [];
 
@@ -37,9 +43,9 @@ button.addEventListener("click", function () {
   let shownSum = document.createElement("div");
   displaySum.innerHTML = "";
 
-  let displayProbOfYatzy = document.getElementById("show_probOfYatzy");
-  let shownProbOfYatzy = document.createElement("div");
-  displayProbOfYatzy.innerHTML = "";
+  let displayProbOfYahtzee = document.getElementById("show_probOfYatzy");
+  let shownProbOfYahtzee = document.createElement("div");
+  displayProbOfYahtzee.innerHTML = "";
 
   
   /*
@@ -55,15 +61,15 @@ button.addEventListener("click", function () {
     */
   thrownDice.innerHTML = roll.join(", ");
 
-  if(isYatzy(roll)) {
-      thrownDice.innerHTML += " YATZY!!";
-      thrownDice.classList.add("yatzy");
+  if(isYahtzee(roll)) {
+      thrownDice.innerHTML += " YAHTZEE!!";
+      thrownDice.classList.add("yahtzee");
   }
   displayThrow.appendChild(thrownDice);
 
   shownSum.innerHTML = sumOfDice(roll);
   displaySum.appendChild(shownSum);
 
-  shownProbOfYatzy.innerHTML = probOfYatzy(roll);
-  displayProbOfYatzy.appendChild(shownProbOfYatzy);
+  shownProbOfYahtzee.innerHTML = probOfYahtzee(roll);
+  displayProbOfYahtzee.appendChild(shownProbOfYahtzee);
 });

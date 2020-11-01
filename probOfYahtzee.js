@@ -1,5 +1,5 @@
 
-function probOfYatzy(array) {
+function probOfYahtzee(array) {
     let probFirstDie = 1;
     let probNextDie = (6/(Math.pow(6, array.length)));
 
@@ -9,8 +9,8 @@ function probOfYatzy(array) {
     }
 
     if(array.length === 1) {
-        return probFirstDie + "00 % chance of Yatzy";
+        return probFirstDie + "00 % chance of yahtzee";
     }
     
-    return (probNextDie * 100) + " % chance of Yatzy";
+    return (probNextDie * 100) + " % chance of yahtzee";
 }
